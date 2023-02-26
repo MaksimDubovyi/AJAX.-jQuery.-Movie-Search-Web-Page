@@ -1,0 +1,120 @@
+﻿
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .divs {
+            margin-right: 30px;
+            margin-top: 10px;
+            background-color: rgb(199, 165, 134);
+            box-shadow: 25px 25px 16px rgb(119, 109, 109);
+            border-radius: 10px;
+        }
+
+        .img {
+            border-radius: 15px;
+            width: 90px;
+            height: 200px;
+            margin-right: 10px;
+        }
+        .img1 {
+            
+            width: 190px;
+            height: 400px;
+            margin: 10px;
+        }
+
+        table {
+            border-radius: 15px;
+            border-radius: 15px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            margin: 0;
+            padding: 3px;
+        }
+
+        span {
+            color: black;
+            margin-right: 20px;
+        }
+        .button {
+            width: 30px;
+            height: 25px;
+            border-radius: 5px;
+            margin-right: 3px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="Scripts/css/bootstrap.css" />
+</head>
+<body style="background-color: lightblue ">
+    <h2 style="margin-left: 300px; margin-top:100px; color:red; font-family:'Bad Script' " id="Movie_not_found"></h2>
+    <h1 style="margin-left: 300px; margin-top: 50px;" >Search</h1>
+    <div class="divs" style="width: 650px; height: 110px; margin-left: 300px; ">
+        <form style=" margin-left: 30px;" id="formr">
+            <table>
+                <tbody>
+                    <tr style=" height: 50px;">
+                        <td><label for="title">Title : </label></td>
+                        <td>
+                            <input type="text" id="titler" name="title" placeholder="Title" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Type:</label></td>
+                        <td>
+                            <select id="list_Type">
+                                <option value="movie" selected>movie</option>
+                                <option value="series">series</option>
+                                <option value="game">game</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr id="tr_btn">
+                        <td rowspan="9">
+                            <input class="btn btn-sm btn-info" type="button" id="Search" name="Search" value="Search" />
+                        </td>
+                        <td></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <div class="container-fluid" style="margin:70px;">
+        <div class="row" id="div1"> </div>
+        <div class="row" id="div2"> </div>
+    </div>
+
+
+    <div style="margin-left: 300px; width:400px; height:430px;" id="div33">
+        <table>
+            <tbody>
+                <tr><td rowspan="9"><img id="fotom"></td></tr>
+                <tr><td><span id="Titlem"></span></td></tr>
+                <tr><td><span id="Releasedm"></span></td></tr>
+                <tr><td><span id="Genrem"></span></td></tr>
+                <tr><td><span id="Countrym"></span></td></tr>
+                <tr><td><span id="Directorm"></span></td></tr>
+                <tr><td><span id="Writerm"></span></td></tr>
+                <tr><td><span id="Actorsm"></span></td></tr>
+                <tr><td><span id="Awardsm"></span></td></tr>
+                <tr><td></td></tr>
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>
